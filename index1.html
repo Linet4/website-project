@@ -9,158 +9,192 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .navbar {
-            margin: 20px;
-
-        }
-
-        .logo {
-            font-size: large;
-            font-weight: bold;
-            font-family: Arial;
-            left: 100px;
-            top: 20px;
-            margin-top: 20px;
-            color: aliceblue;
-
-
-        }
-
         .top {
-            background-image: url("purple.jpeg");
+            height: 600px;
+            color: white;
             background-size: cover;
-            height: 800px;
-            width: 100%;
+            background-position: center;
+            background-image: url(purple.jpeg);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
 
         }
 
-        ul {
-            float: right;
-            margin-top: 20px;
-            min-height: 100px;
-            margin-right: 500px;
-            font-size: 17px;
-        }
 
-        ul li {
+        .top .nav .logo li {
             display: inline-block;
-            color: white;
-            margin-top:0;
-            width: 100px;
+            top: 0;
         }
 
-        .form {
+
+
+        .top .nav .logo span {
+            font-weight: bold;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .top .nav .navbar {
+            position: absolute;
+            left: 30%;
+            top: 15px;
+        }
+
+        .top .nav .navbar li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .top .nav .login {
+            position: absolute;
+            right: 10%;
+            top: 15px;
+        }
+
+        .top .nav .login li {
+            display: inline-block;
+            margin-left: 15px;
+
+        }
+
+        .top .content {
+            margin-top: 20%;
+            text-align: center;
+
+        }
+
+        .top .content botton {
+            color: #ee1111;
+        }
+        .bottom{
+            margin-top: 90px;
             
-            color: white;
-            display: flex;
-            margin-left: 800px;
-            min-height: 15px;
-            margin-top: -0.1;
-            height: 20px;
-            width: 41%;
-            
+        }
+
+
+        .word {
+            text-align: center;
 
         }
 
-        .content {
-            color: white;
-            margin-top: 20px;
-            margin-left: 300px
+        .bottom .container .box img {
+            height: 250px;
+            width: 250px;
         }
 
-        button {
-            background-color: #f40b45;
-            border-radius: 10%;
+        .bottom .container .box {
+            width: 250px;
+            margin-right: 30px;
         }
 
-        .bottom {
+        .bottom .container .box .icon img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .bottom .container .box .icon {
             position: relative;
-
         }
 
-        .header {
-            width: 500px;
-            margin-top: 20px;
-            margin-left: 400px;
-
+        .bottom .container .box .icon .comment {
+            position: absolute;
+            top: 0;
+            right: 15px;
         }
 
-        .flex-container {
-
+        .bottom .container {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-
-
+            justify-content: center;
         }
 
-        .first img {
-            height: 150px;
-
-
-        }
-
-        .first {
-            margin: 50px;
-            display: flex;
+        svg {
+            position: absolute;
+            top: 400px;
         }
     </style>
 </head>
 
 <body>
     <div class="top">
-        <div class="navbar">
-            <div class="logo">
-                <i class="fa-brands fa-drupal" style="color: #f40b45;"></i>Study Course<br>Journey to Success
-            </div>
-            <ul>
+        <div class="nav">
+            <ul class="logo">
+                <li><i class="fa-regular fa-gem" style="color: #ee1111;"></i></li>
+                <li><span>Study Course</span><br>Journey to Success</li>
+            </ul>
+            <ul class="navbar">
                 <li>Home</li>
                 <li>About</li>
                 <li>Courses</li>
                 <li>Pages</li>
                 <li>Contact</li>
             </ul>
-            <div class="form">
-                <div class="search"><i class="fa-solid fa-magnifying-glass" style="color: #f5f5f5;"></i></div>
-                <div class="user"></div><i class="fa-regular fa-user" style="color: #f0f2f4;"></i>login
-                <div class="fa-moo"><i class="fa-regular fa-moon" style="color: #f3f4f7;"></i></div>
+            <ul class="login">
+                <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="user"><i class="fa-regular fa-user"></i>Login</li>
+                <li class="fa-moo"><i class="fa-regular fa-moon"></i></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="content">
+            <h1>50% Discount on all Popular <br>Courses</h1>
+
+            <p>Take the first step to your journey with us</p>
+            <button>Ready to get started</button>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,192L48,202.7C96,213,192,235,288,240C384,245,480,235,576,202.7C672,171,768,117,864,112C960,107,1056,149,1152,170.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+
+    <div class="bottom">
+        <div class="word">
+            <h5>JOIN OUR ONLINE COURSES</h5>
+            <h2>Featured Online Courses</h2>
+        </div>
+        <div class="container">
+            <div class="box">
+
+                <img src="p1.jpeg">
+                
+                <h4>Open Programming Courses for everyone:python</h4>
+                <div class="icon">
+                    <hr>
+                    <img src="p2.jpeg" alt="">
+                    <p class="comment">_Programming done by Jane</p>
+                </div>
             </div>
-            <div class="content">
-                <h1>50% Discount on all Popular <br>Courses<br></h1>
+            <div class="box">
 
-                <h4>Take the first step to your journey with us<h4>
-
-                        <div class="button">
-                            <button>Ready to get started</button>
-                        </div>
-
+                <img src="p2.jpeg">
+                <h4>Learning to write as a Clean and Professional Author</h4>
+                <div class="icon">
+                    <hr>
+                    <img src="p3.jpeg" alt="">
+                    <p class="comment">_Done by Nancy in Nursing</p>
+                </div>
             </div>
+            <div class="box">
+
+                <img src="p3.jpeg">
+                <h4>Learn Master JQuery in a short Period of Time</h4>
+                <div class="icon">
+                    <hr>
+                    <img src="p1.jpeg" alt="">
+                    <p class="comment">_Programming done by Tom</p>
+                </div>
+            </div>
+
+
         </div>
 
     </div>
-    <div class="bottom">
-        <div class="header">
-            <h4>JOIN OUR ONLINE COURSES</h4>
-            <h2>Featured Online Courses</h2>
-        </div>
-        <div class="flex-container">
-            <div class="first">
-                <div>
-                    <img src="computer.img.jpeg">
-                    <div>Open Programming Courses for<br> everyone:python</div>
-                </div>
 
-                <div>
-                    <img src="computer.img.jpeg">
-                    <div>Learn to write as a clean and<br> Professional Author</div>
-                </div>
-                <div>
-                    <img src="computer.img.jpeg">
-                    <div>Learn Msater JQuery in a short<br> Period of Time</div>
-                </div>
-            </div>
-        </div>
 </body>
 
 </html>
